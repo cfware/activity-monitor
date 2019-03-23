@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.1](https://github.com/cfware/activity-monitor/compare/v0.1.0...v0.1.1) (2019-03-23)
+
+
+### Bug Fixes
+
+* activity-event.js was missing from npm package. ([dc1fdf3](https://github.com/cfware/activity-monitor/commit/dc1fdf3))
+
+
+
 # 0.1.0 (2019-03-23)
 
 
