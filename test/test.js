@@ -21,10 +21,10 @@ test.serial('does not require a callback function', async t => {
 	t.is(typeof activityMonitor, 'object');
 	t.false(activityMonitor.activity);
 
-	activityMonitor.enable(5);
+	activityMonitor.enable(50);
 	t.true(activityMonitor.activity);
 
-	await sleepFor(20);
+	await sleepFor(200);
 
 	t.false(activityMonitor.activity);
 	activityMonitor.disable();
