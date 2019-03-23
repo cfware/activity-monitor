@@ -1,16 +1,11 @@
 import test from 'ava';
 
 import pSeries from 'p-series';
+import delay from 'delay';
 
 import ActivityMonitor from '..';
 import activityEvents from '../activity-events';
 import {emptyEvents, window} from './helpers/init-fake-window';
-
-function sleepFor(ms) {
-	return new Promise(resolve => {
-		setTimeout(resolve, ms);
-	});
-}
 
 test('ActivityMonitor is a function', t => {
 	t.is(typeof ActivityMonitor, 'function');
@@ -24,7 +19,7 @@ test.serial('does not require a callback function', async t => {
 	activityMonitor.enable(50);
 	t.true(activityMonitor.activity);
 
-	await sleepFor(200);
+	await delay(200);
 
 	t.false(activityMonitor.activity);
 	activityMonitor.disable();
@@ -48,11 +43,11 @@ test.serial('with callback function', async t => {
 	t.true(activityMonitor.activity);
 	t.is(callbackCount, 0);
 
-	await sleepFor(150);
+	await delay(150);
 	t.is(callbackCount, 1);
 	t.true(activityMonitor.activity);
 
-	await sleepFor(100);
+	await delay(100);
 	t.is(callbackCount, 2);
 	t.false(activityMonitor.activity);
 
@@ -61,7 +56,7 @@ test.serial('with callback function', async t => {
 			window.events[e][0]();
 			t.true(activityMonitor.activity);
 
-			await sleepFor(250);
+			await delay(250);
 
 			t.false(activityMonitor.activity);
 		};
