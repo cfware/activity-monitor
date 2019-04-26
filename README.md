@@ -10,7 +10,8 @@ Browser activity monitor.
 
 ### Install @cfware/activity-monitor
 
-This module requires node.js 8 or above.
+Testing this module requires node.js 12 or above, though it targets the
+browser.
 
 ```sh
 npm i --save @cfware/activity-monitor

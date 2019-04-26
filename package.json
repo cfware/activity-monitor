@@ -8,13 +8,13 @@
 		"test": "xo && nyc ava -v"
 	},
 	"engines": {
-		"node": ">=8"
+		"node": ">=12"
 	},
 	"author": "Corey Farrell",
 	"license": "MIT",
 	"files": [
 		"*.js",
-		"!babel.config.js"
+		"!nyc.config.js"
 	],
 	"keywords": [],
 	"repository": {
@@ -31,39 +31,21 @@
 		"@cfware/cleanable-interval": "^0.1.0"
 	},
 	"devDependencies": {
-		"@babel/plugin-proposal-class-properties": "^7.4.0",
-		"@babel/plugin-transform-modules-commonjs": "^7.4.0",
-		"@babel/register": "^7.4.0",
 		"@cfware/eslint-config-browser": "^0.2.1",
-		"ava": "^1.3.1",
-		"babel-plugin-istanbul": "^5.1.1",
-		"delay": "^4.1.0",
-		"nyc": "^14.0.0",
-		"p-series": "^2.0.0",
+		"@cfware/nyc": "^0.4.2",
+		"ava": "^1.4.1",
+		"delay": "^4.2.0",
+		"nyc": "^14.1.0",
+		"p-series": "^2.1.0",
 		"standard-version": "^5.0.2",
 		"xo": "^0.24.0"
-	},
-	"nyc": {
-		"all": true,
-		"check-coverage": true,
-		"per-file": true,
-		"lines": 100,
-		"statements": 100,
-		"functions": 100,
-		"branches": 100,
-		"sourceMap": false,
-		"instrument": false,
-		"require": [
-			"esm",
-			"@babel/register"
-		]
 	},
 	"xo": {
 		"parser": "babel-eslint",
 		"overrides": [
 			{
 				"files": [
-					"activity-monitor.js"
+					"activity-*.js"
 				],
 				"extends": "@cfware/eslint-config-browser"
 			}
