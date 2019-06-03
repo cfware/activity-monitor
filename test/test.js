@@ -5,7 +5,7 @@ import delay from 'delay';
 
 import ActivityMonitor from '..';
 import activityEvents from '../activity-events';
-import {emptyEvents, window} from './helpers/init-fake-window';
+import {emptyEvents, window} from './_init-fake-window';
 
 test('ActivityMonitor is a function', t => {
 	t.is(typeof ActivityMonitor, 'function');
