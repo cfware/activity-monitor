@@ -12,10 +12,6 @@
 	},
 	"author": "Corey Farrell",
 	"license": "MIT",
-	"files": [
-		"*.js",
-		"!nyc.config.js"
-	],
 	"keywords": [],
 	"repository": {
 		"type": "git",
