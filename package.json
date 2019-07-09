@@ -28,6 +28,7 @@
 	},
 	"devDependencies": {
 		"@cfware/eslint-config-browser": "^0.3.0",
+		"@cfware/eslint-config-node": "^0.1.0",
 		"@cfware/nyc": "^0.5.0",
 		"ava": "^2.0.0",
 		"delay": "^4.2.0",
@@ -37,13 +38,16 @@
 		"xo": "^0.24.0"
 	},
 	"xo": {
-		"parser": "babel-eslint",
+		"extends": "@cfware/eslint-config-node",
 		"overrides": [
 			{
 				"files": [
 					"activity-*.js"
 				],
-				"extends": "@cfware/eslint-config-browser"
+				"extends": [
+					"@cfware/eslint-config-node",
+					"@cfware/eslint-config-browser"
+				]
 			}
 		]
 	}

@@ -1,4 +1,4 @@
-import activityEvents from '../activity-events';
+import activityEvents from '../activity-events.js';
 
 export function emptyEvents() {
 	const empty = {};

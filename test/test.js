@@ -3,9 +3,9 @@ import test from 'ava';
 import pSeries from 'p-series';
 import delay from 'delay';
 
-import ActivityMonitor from '..';
-import activityEvents from '../activity-events';
-import {emptyEvents, window} from './_init-fake-window';
+import ActivityMonitor from '../activity-monitor.js';
+import activityEvents from '../activity-events.js';
+import {emptyEvents, window} from './_init-fake-window.js';
 
 test('ActivityMonitor is a function', t => {
 	t.is(typeof ActivityMonitor, 'function');

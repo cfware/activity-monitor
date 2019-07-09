@@ -1,7 +1,7 @@
 import addEventListener from '@cfware/add-event-listener';
 import runCallbacks from '@cfware/callback-array-once';
 import cleanableInterval from '@cfware/cleanable-interval';
-import activityEvents from './activity-events';
+import activityEvents from './activity-events.js';
 
 class ActivityMonitor {
 	_eventWatchers = [];
