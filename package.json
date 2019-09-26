@@ -35,7 +35,7 @@
 		"nyc": "^14.1.1",
 		"p-series": "^2.1.0",
 		"standard-version": "^7.0.0",
-		"xo": "^0.24.0"
+		"xo": "^0.25.3"
 	},
 	"xo": {
 		"extends": "@cfware/eslint-config-node",
