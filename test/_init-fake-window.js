@@ -3,9 +3,9 @@ import activityEvents from '../activity-events.js';
 export function emptyEvents() {
 	const empty = {};
 
-	activityEvents.forEach(e => {
+	for (const e of activityEvents) {
 		empty[e] = [];
-	});
+	}
 
 	return empty;
 }

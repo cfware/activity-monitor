@@ -39,10 +39,11 @@ test.serial('with callback function', async t => {
 	activityMonitor.enable(100);
 	activityMonitor.enable();
 
-	activityEvents.forEach(e => {
+	for (const e of activityEvents) {
 		t.is(window.events[e].length, 1);
 		t.is(typeof window.events[e][0], 'function');
-	});
+	}
+
 	t.true(activityMonitor.activity);
 	t.is(callbackCount, 0);
 
