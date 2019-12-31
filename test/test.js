@@ -1,11 +1,14 @@
+import {promisify} from 'util';
+
 import test from 'ava';
 
 import pSeries from 'p-series';
-import delay from 'delay';
 
 import ActivityMonitor from '../activity-monitor.js';
 import activityEvents from '../activity-events.js';
 import {emptyEvents, window} from './_init-fake-window.js';
+
+const delay = promisify(setTimeout);
 
 test('ActivityMonitor is a function', t => {
 	t.is(typeof ActivityMonitor, 'function');
