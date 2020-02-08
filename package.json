@@ -1,6 +1,6 @@
 {
 	"name": "@cfware/activity-monitor",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "Browser activity monitor",
 	"main": "activity-monitor.js",
 	"exports": "./activity-monitor.js",
