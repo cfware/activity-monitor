@@ -26,7 +26,7 @@ class ActivityMonitor {
 
 		onactivity();
 		this._eventWatchers.push(
-			...activityEvents.map(e => addEventListener(window, e, onactivity)),
+			...activityEvents.map(event => addEventListener(window, event, onactivity)),
 			cleanableInterval(() => {
 				this._activity = [this._activity[1], false];
 				this._callback();

@@ -10,9 +10,6 @@ Browser activity monitor.
 
 ### Install @cfware/activity-monitor
 
-Testing this module requires node.js 12 or above, though it targets the
-browser.
-
 ```sh
 npm i --save @cfware/activity-monitor
 ```
@@ -30,15 +27,6 @@ const activityMonitor = new ActivityMonitor(() => {
 });
 
 activityMonitor.enable();
-```
-
-## Running tests
-
-Tests are provided by xo and ava.
-
-```sh
-npm install
-npm test
 ```
 
 [npm-image]: https://img.shields.io/npm/v/@cfware/activity-monitor.svg
