@@ -1,6 +1,6 @@
 # @cfware/activity-monitor
 
-[![Travis CI][travis-image]][travis-url]
+![Tests][tests-status]
 [![Greenkeeper badge][gk-image]](https://greenkeeper.io/)
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][downloads-image]][downloads-url]
@@ -31,8 +31,7 @@ activityMonitor.enable();
 
 [npm-image]: https://img.shields.io/npm/v/@cfware/activity-monitor.svg
 [npm-url]: https://npmjs.org/package/@cfware/activity-monitor
-[travis-image]: https://travis-ci.org/cfware/activity-monitor.svg?branch=master
-[travis-url]: https://travis-ci.org/cfware/activity-monitor
+[tests-status]: https://github.com/cfware/activity-monitor/workflows/Tests/badge.svg
 [gk-image]: https://badges.greenkeeper.io/cfware/activity-monitor.svg
 [downloads-image]: https://img.shields.io/npm/dm/@cfware/activity-monitor.svg
 [downloads-url]: https://npmjs.org/package/@cfware/activity-monitor

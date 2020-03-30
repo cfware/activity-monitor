@@ -1,6 +1,8 @@
 *.tgz
+nyc.config.cjs
+.nyc_output
 coverage
 package
 .eslintrc.json
-.travis.yml
+.github
 test.js
