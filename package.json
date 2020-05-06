@@ -38,6 +38,6 @@
 		"libtap": "^0.3.0",
 		"nyc": "^15.0.0",
 		"p-series": "^2.1.0",
-		"standard-version": "^7.0.0"
+		"standard-version": "^8.0.0"
 	}
 }
