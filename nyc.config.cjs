@@ -1,5 +1,3 @@
 'use strict';
 
-module.exports = require('@cfware/nyc')
-	.all()
-	.fullCoverage();
+module.exports = require('@cfware/nyc');

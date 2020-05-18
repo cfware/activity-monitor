@@ -1,8 +1,6 @@
 *.tgz
 nyc.config.cjs
-.nyc_output
 coverage
-package
 .eslintrc.json
 .github
 test.js
