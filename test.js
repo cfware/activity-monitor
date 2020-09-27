@@ -3,7 +3,6 @@ import {promisify} from 'util';
 import t from 'libtap';
 import pSeries from 'p-series';
 
-// eslint-disable-next-line import/no-unresolved
 import ActivityMonitor from '@cfware/activity-monitor';
 import activityEvents from './activity-events.js';
 
