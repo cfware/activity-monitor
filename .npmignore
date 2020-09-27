@@ -1,5 +1,5 @@
 *.tgz
-nyc.config.cjs
+nyc.config.js
 coverage
 .eslintrc.json
 .github
