@@ -16,7 +16,7 @@ class ActivityMonitor {
 	}
 
 	enable(interval = 10000) {
-		if (this._eventWatchers.length !== 0) {
+		if (this._eventWatchers.length > 0) {
 			return;
 		}
 

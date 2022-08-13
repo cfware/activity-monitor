@@ -1,4 +1,4 @@
-import {promisify} from 'util';
+import {promisify} from 'node:util';
 
 import t from 'libtap';
 import pSeries from 'p-series';
@@ -19,11 +19,11 @@ function emptyEvents() {
 const global = new Function('return this')(); // eslint-disable-line no-new-func
 global.window = {
 	events: emptyEvents(),
-	addEventListener(type, fn) {
-		this.events[type].push(fn);
+	addEventListener(type, callback) {
+		this.events[type].push(callback);
 	},
-	removeEventListener(type, fn) {
-		this.events[type] = this.events[type].filter(a => a !== fn);
+	removeEventListener(type, callback) {
+		this.events[type] = this.events[type].filter(a => a !== callback);
 	}
 };
 
