@@ -1,6 +1,6 @@
 export default [
-	'mousemove',
-	'mousedown',
-	'keydown',
-	'wheel'
+    'mousemove',
+    'mousedown',
+    'keydown',
+    'wheel'
 ];
